@@ -1,6 +1,6 @@
 # SmartQ: AI-Enhanced Barber Queue Management System
 
-**SmartQ** is a full-stack web application designed to modernize traditional barber shop operations. It addresses the common pain points of long physical waiting times and inefficient manual queue management by introducing a digital queuing system paired with an AI-driven barber assistant.
+**SmartQ** is a full-stack web application designed to modernize traditional barber shop operations. It addresses the common problems of long physical waiting times and inefficient manual queue management by introducing a digital queuing system paired with an AI-driven barber assistant.
 
 ---
 
