@@ -1,16 +1,64 @@
-# React + Vite
+# SmartQ: AI-Enhanced Barber Queue Management System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**SmartQ** is a full-stack web application designed to modernize traditional barber shop operations. It addresses the common pain points of long physical waiting times and inefficient manual queue management by introducing a digital queuing system paired with an AI-driven barber assistant.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tech Stack
+* **Frontend:** React.js (Vite)
+* **Backend:** Node.js
+* **Database:** MySQL
+* **AI Engine:** Gemini AI API (for personalized hairstyle recommendations)
+* **SMS Gateway:** Text.lk (for real-time appointment alerts)
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Key Features
+* **Remote Virtual Queue:** Join the queue from anywhere, reducing physical waiting time.
+* **AI-Styling Assistant:** Get personalized hairstyle suggestions based on your preferences and hair type.
+* **Predictive Wait Time:** Real-time estimation of service duration.
+* **Automated SMS Notifications:** Instant updates on queue position via Text.lk integration.
+* **Barber Dashboard:** Centralized view for staff to manage walk-ins and digital bookings.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## System Design
+The system architecture follows a three-tier model ensuring clear separation between the UI, business logic, and data.
+
+
+
+* **Database Schema:** Designed to handle relational data between Users, Barbers, Appointments, and Services.
+* **Workflow:** The system utilizes a sequence-based approach to ensure appointments do not conflict, providing a seamless experience for both the customer and the barber.
+
+---
+
+## Getting Started
+
+### Prerequisites
+* Node.js (v18+)
+* MySQL Server
+
+### Installation
+1. **Clone the repository:**
+   ```bash
+   git clone [https://github.com/zacharcy/smartq-barber.git](https://github.com/zacharcy/smartq-barber.git)
+
+
+### Backend Setup:
+
+Navigate to /backend
+
+Create a .env file and add your DB_PASSWORD, GEMINI_API_KEY, and TEXT_LK_API_KEY.
+
+
+### Frontend Setup:
+
+Navigate to /frontend
+
+Run npm install and npm run dev.
+
+### Academic Information
+
+**Project Name:** SmartQ Barber Management System
+
+**Student:** Zameer Ameer
